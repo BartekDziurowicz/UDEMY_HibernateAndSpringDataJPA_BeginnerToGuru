@@ -26,6 +26,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>4.19.0</version>
+		</dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
@@ -71,7 +76,7 @@
 					<outputChangeLogFile>changelog.xml</outputChangeLogFile>
 					<changeSetAuthor>BD</changeSetAuthor>
 					<changelogSchemaName>bookdb</changelogSchemaName>
-<!--					<propertyFile>liquibase.properties</propertyFile>-->
+					<propertyFile>application.properties</propertyFile>
 				</configuration>
 				<dependencies>
 					<dependency>

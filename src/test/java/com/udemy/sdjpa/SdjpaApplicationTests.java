@@ -19,8 +19,4 @@ class SdjpaApplicationTests {
 		assertThat(count).isGreaterThan(0);
 	}
 
-	@Test
-	void contextLoads() {
-	}
-
 }
