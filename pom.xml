@@ -68,7 +68,10 @@
 					<url>jdbc:mysql://192.168.0.21:3306/bookdb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC</url>
 					<username>bookadmin</username>
 					<password>password</password>
-					<propertyFile>liquibase.properties</propertyFile>
+					<outputChangeLogFile>changelog.xml</outputChangeLogFile>
+					<changeSetAuthor>BD</changeSetAuthor>
+					<changelogSchemaName>bookdb</changelogSchemaName>
+<!--					<propertyFile>liquibase.properties</propertyFile>-->
 				</configuration>
 				<dependencies>
 					<dependency>
