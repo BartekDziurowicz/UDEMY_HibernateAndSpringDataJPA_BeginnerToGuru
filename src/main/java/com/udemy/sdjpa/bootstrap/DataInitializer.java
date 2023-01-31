@@ -16,7 +16,7 @@ public class DataInitializer implements CommandLineRunner {
     public void run(String... args) throws Exception {
         bookRepository.deleteAll();
 
-        Book bookEDD = new Book(null, "Entity Driven Design", "123", "Publisher");
+        Book bookEDD = new Book(null, "Entity Driven Design", "123", "Publisher", null);
 
         Book savedEDD = bookRepository.save(bookEDD);
 
